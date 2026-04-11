@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <!-- Background Circle -->
+  <circle cx="100" cy="100" r="100" fill="#1a3a5c"/>
+
+  <!-- Open Bible -->
+  <path d="M60 145 Q100 135 100 135 Q100 135 140 145 L140 155 Q100 145 100 145 Q100 145 60 155 Z" fill="white" opacity="0.95"/>
+  <path d="M55 142 Q100 130 100 130 Q100 130 145 142 L145 150 Q100 138 100 138 Q100 138 55 150 Z" fill="white"/>
+  <line x1="100" y1="130" x2="100" y2="150" stroke="#1a3a5c" stroke-width="1"/>
+
+  <!-- Cross -->
+  <rect x="96" y="100" width="8" height="50" rx="1" fill="white"/>
+  <rect x="86" y="110" width="28" height="8" rx="1" fill="white"/>
+
+  <!-- Flame - Three flowing strands -->
+  <!-- Left strand -->
+  <path d="M92 105 Q80 80 88 55 Q92 42 96 35 Q90 55 95 70 Q98 80 92 105Z" fill="white" opacity="0.9"/>
+  <!-- Center strand -->
+  <path d="M97 100 Q90 72 95 48 Q98 32 100 22 Q102 32 105 48 Q110 72 103 100Z" fill="white"/>
+  <!-- Right strand -->
+  <path d="M108 105 Q114 80 108 55 Q104 42 100 35 Q106 55 102 70 Q99 80 108 105Z" fill="white" opacity="0.9"/>
+</svg>
