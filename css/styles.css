@@ -246,6 +246,13 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 1.1rem;
 }
 
+.logo-img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
 .logo-text {
   line-height: 1.2;
 }
