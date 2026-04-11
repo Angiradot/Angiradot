@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact SDA Church Kisumu South. Reach our pastor, elders, or send us a message.">
+  <title>Contact Us — SDA Church Kisumu South</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <a href="../index.html" class="logo">
+        <div class="logo-icon">SDA</div>
+        <div class="logo-text">
+          <span class="church-name">SDA Church</span>
+          <span class="church-location">Kisumu South</span>
+        </div>
+      </a>
+      <nav class="nav" id="main-nav">
+        <a href="../index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="worship.html">Worship</a>
+        <a href="sermons.html">Sermons</a>
+        <a href="ministries.html">Ministries</a>
+        <a href="events.html">Events</a>
+        <a href="giving.html">Giving</a>
+        <a href="visit.html">Visit</a>
+        <a href="prayer.html">Prayer</a>
+        <a href="contact.html" class="active">Contact</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+  <div class="nav-overlay"></div>
+
+  <!-- Page Header -->
+  <section class="page-header">
+    <div class="container">
+      <h1>Contact Us</h1>
+      <p>We would love to hear from you — reach out anytime</p>
+      <div class="breadcrumb">
+        <a href="../index.html">Home</a> <span>/</span> <span>Contact</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section">
+    <div class="container">
+      <div class="contact-grid">
+        <!-- Contact Info -->
+        <div>
+          <h2 style="font-size: 1.6rem; margin-bottom: 8px;">Get in Touch</h2>
+          <p style="color: var(--text-light); margin-bottom: 32px;">
+            Whether you have questions about our church, need pastoral counsel, or want to learn more about our programs, we are here for you.
+          </p>
+
+          <h3 style="font-size: 1.1rem; margin-bottom: 16px; color: var(--primary);">Church Leadership</h3>
+
+          <div class="contact-person">
+            <div class="contact-avatar">HA</div>
+            <div class="contact-info">
+              <strong>Pastor Henry Akatch</strong>
+              <span class="role">Church Pastor</span>
+              <a href="tel:+254728070853" class="phone">0728 070 853</a>
+            </div>
+          </div>
+
+          <div class="contact-person">
+            <div class="contact-avatar">LA</div>
+            <div class="contact-info">
+              <strong>Elder Linus Aluoch</strong>
+              <span class="role">First Elder</span>
+              <a href="tel:+254717669711" class="phone">0717 669 711</a>
+            </div>
+          </div>
+
+          <div class="contact-person">
+            <div class="contact-avatar">NT</div>
+            <div class="contact-info">
+              <strong>Elder Noah Tuma</strong>
+              <span class="role">Second Elder</span>
+              <a href="tel:+254724498532" class="phone">0724 498 532</a>
+            </div>
+          </div>
+
+          <div class="contact-person" style="border-bottom: none;">
+            <div class="contact-avatar" style="background: var(--green);">RA</div>
+            <div class="contact-info">
+              <strong>Rose Aduda</strong>
+              <span class="role">Church Treasurer</span>
+              <a href="tel:+254710657458" class="phone">0710 657 458</a>
+            </div>
+          </div>
+
+          <!-- Map Placeholder -->
+          <div class="map-placeholder">
+            <div style="text-align: center;">
+              <p style="font-size: 1.5rem; margin-bottom: 8px;">&#128205;</p>
+              <p><strong>SDA Church Kisumu South</strong></p>
+              <p>Kisumu, Kenya</p>
+              <p style="font-size: 0.85rem; margin-top: 8px;">Google Map integration can be embedded here</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div>
+          <div class="form-card" style="max-width: 100%;">
+            <h3>Send Us a Message</h3>
+            <p class="form-intro">
+              Fill out the form below and we will get back to you as soon as possible.
+            </p>
+
+            <form id="contact-form">
+              <div class="form-group">
+                <label for="contact-name">Full Name *</label>
+                <input type="text" id="contact-name" name="name" placeholder="Enter your full name" required>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-email">Email Address *</label>
+                <input type="email" id="contact-email" name="email" placeholder="Enter your email address" required>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-phone">Phone Number</label>
+                <input type="tel" id="contact-phone" name="phone" placeholder="e.g. 0712 345 678">
+              </div>
+
+              <div class="form-group">
+                <label for="contact-subject">Subject *</label>
+                <select id="contact-subject" name="subject" required>
+                  <option value="">Select a subject</option>
+                  <option value="general">General Inquiry</option>
+                  <option value="visit">Planning a Visit</option>
+                  <option value="pastoral">Pastoral Counseling</option>
+                  <option value="membership">Membership</option>
+                  <option value="ministry">Join a Ministry</option>
+                  <option value="giving">Giving & Finances</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-message">Message *</label>
+                <textarea id="contact-message" name="message" placeholder="Write your message here..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quick Contact Banner -->
+  <section class="verse-banner" style="padding: 48px 0;">
+    <div class="container">
+      <h3 style="color: white; font-size: 1.4rem; margin-bottom: 16px;">Quick Contact</h3>
+      <div style="display: flex; justify-content: center; gap: 40px; flex-wrap: wrap; font-size: 1.05rem;">
+        <span>&#9742; <a href="tel:+254728070853" style="color: white;">+254 728 070 853</a></span>
+        <span>&#9993; <a href="mailto:sdakisumusouth@church.org" style="color: white;">sdakisumusouth@church.org</a></span>
+        <span>&#128205; Kisumu South, Kenya</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <h4>SDA Church Kisumu South</h4>
+          <p>A Seventh-day Adventist community dedicated to worship, fellowship, and sharing the everlasting gospel of Jesus Christ.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <a href="about.html">About Us</a>
+          <a href="worship.html">Worship</a>
+          <a href="sermons.html">Sermons</a>
+          <a href="ministries.html">Ministries</a>
+          <a href="events.html">Events</a>
+          <a href="giving.html">Give</a>
+        </div>
+        <div class="footer-links">
+          <h4>Resources</h4>
+          <a href="visit.html">Plan Your Visit</a>
+          <a href="prayer.html">Prayer Requests</a>
+          <a href="contact.html">Contact Us</a>
+        </div>
+        <div>
+          <h4>Contact Info</h4>
+          <div class="footer-contact-item"><span class="icon">&#128205;</span><span>Kisumu South, Kenya</span></div>
+          <div class="footer-contact-item"><span class="icon">&#9742;</span><span>+254 728 070 853</span></div>
+          <div class="footer-contact-item"><span class="icon">&#9993;</span><span>sdakisumusouth@church.org</span></div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Seventh-day Adventist Church, Kisumu South. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="scroll-top" aria-label="Scroll to top">&#8593;</button>
+  <script src="../js/main.js"></script>
+</body>
+</html>
