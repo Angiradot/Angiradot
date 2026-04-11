@@ -1546,6 +1546,146 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+/* --- Annual Calendar --- */
+.calendar-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+  margin-bottom: 48px;
+}
+
+.calendar-nav a {
+  padding: 8px 18px;
+  background: var(--sky);
+  border-radius: 20px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--primary);
+  transition: all var(--transition);
+}
+
+.calendar-nav a:hover,
+.calendar-nav a.active {
+  background: var(--primary);
+  color: var(--white);
+}
+
+.month-section {
+  margin-bottom: 48px;
+  scroll-margin-top: 90px;
+}
+
+.month-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 20px;
+  padding-bottom: 12px;
+  border-bottom: 3px solid var(--primary);
+}
+
+.month-header .month-badge {
+  background: var(--primary);
+  color: var(--white);
+  padding: 8px 20px;
+  border-radius: var(--radius);
+  font-weight: 700;
+  font-size: 1.1rem;
+  white-space: nowrap;
+}
+
+.month-header h3 {
+  font-size: 1.1rem;
+  color: var(--text-light);
+  font-weight: 400;
+}
+
+.calendar-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  margin-bottom: 8px;
+}
+
+.calendar-table thead {
+  background: var(--primary-dark);
+  color: var(--white);
+}
+
+.calendar-table th {
+  padding: 12px 16px;
+  text-align: left;
+  font-weight: 600;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.calendar-table td {
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--border);
+  font-size: 0.9rem;
+  vertical-align: top;
+}
+
+.calendar-table tbody tr:hover {
+  background: var(--sky);
+}
+
+.calendar-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.calendar-table .date-col {
+  font-weight: 600;
+  color: var(--primary);
+  white-space: nowrap;
+  min-width: 100px;
+}
+
+.calendar-table .event-col {
+  font-weight: 500;
+  color: var(--text);
+}
+
+.calendar-table .speaker-col {
+  color: var(--text-light);
+  font-size: 0.88rem;
+}
+
+.calendar-table .venue-col {
+  color: var(--text-light);
+  font-size: 0.88rem;
+}
+
+@media (max-width: 768px) {
+  .calendar-table th,
+  .calendar-table td {
+    padding: 10px 12px;
+    font-size: 0.82rem;
+  }
+
+  .calendar-table .speaker-col,
+  .calendar-table .venue-col {
+    display: none;
+  }
+
+  .calendar-nav a {
+    padding: 6px 14px;
+    font-size: 0.82rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .calendar-table .venue-col {
+    display: none;
+  }
+}
+
 /* --- Animations --- */
 @keyframes fadeInUp {
   from {
